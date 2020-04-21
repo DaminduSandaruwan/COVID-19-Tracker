@@ -27,11 +27,12 @@ class StatusPanel extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Container(
-      margin: EdgeInsets.all(5),
+      margin: EdgeInsets.all(10),
       color: Colors.blue[100],
       height: 80,
       width: width/2,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text('CONFIRMED', style: TextStyle(fontWeight:FontWeight.bold, fontSize: 16),),
           Text('1234', style: TextStyle(fontWeight:FontWeight.bold, fontSize: 16)),

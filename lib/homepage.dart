@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10),
+              padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 10),
               child: Text(
                 'Worldwide',
                 style: TextStyle(
