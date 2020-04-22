@@ -1,6 +1,9 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'datasource.dart';
 import 'panels/worldwidepanel.dart';
+import 'package:http/http.dart' as http;
 
 class HomePage extends StatefulWidget {
   @override
@@ -8,6 +11,23 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+  Map worldData;
+
+  fetchWorldWideData() async{
+    http.Response response = await http.get('https://corona.lmao.ninja/v2/all');
+    setState(() {
+      worldData = json.decode(response.body);
+
+    });
+  } 
+
+  @override
+  void initState() {
+    fetchWorldWideData();
+    super.initState();
+  }   
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            WorldWidePanel(),
+            worldData==null ? CircularProgressIndicator() : WorldWidePanel(worldData: worldData,),
           ],
         ),
       ),
