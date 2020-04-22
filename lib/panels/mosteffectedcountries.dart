@@ -12,6 +12,7 @@ class MostAffectedPanel extends StatelessWidget {
     return Container(
       child: ListView.builder(
         shrinkWrap: true,
+        physics: NeverScrollableScrollPhysics(),
         itemBuilder: (context,index){
         return Container(
           margin: EdgeInsets.symmetric(horizontal:10, vertical:10),
@@ -22,7 +23,6 @@ class MostAffectedPanel extends StatelessWidget {
               Text(countryData[index]['country'],style: TextStyle(fontWeight: FontWeight.bold),),
               SizedBox(width: 10,),
               Text('Deaths:' + countryData[index]['deaths'].toString(), style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold),)
-
             ],
           ),
         );
