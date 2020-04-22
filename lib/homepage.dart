@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:covid19_app/pages/countryPage.dart';
 import 'package:covid19_app/panels/infoPanel.dart';
 import 'package:covid19_app/panels/mosteffectedcountries.dart';
 import 'package:flutter/material.dart';
@@ -78,18 +79,24 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: primaryBlack,
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Text(
-                      'Regional',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white
+                  
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> CountryPage()));
+                    },
+                    child: Container(
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: primaryBlack,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      child: Text(
+                        'Regional',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white
+                        ),
                       ),
                     ),
                   ),
