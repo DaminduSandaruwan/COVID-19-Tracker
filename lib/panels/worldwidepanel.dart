@@ -61,8 +61,12 @@ class StatusPanel extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8),
+        color: panelColor,
+      ),
       margin: EdgeInsets.all(10),
-      color: panelColor,
+      
       height: 80,
       width: width/2,
       child: Column(
