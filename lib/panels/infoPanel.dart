@@ -16,9 +16,13 @@ class InfoPanel extends StatelessWidget {
               Navigator.push(context, MaterialPageRoute(builder: (context)=>FAQPage()));
             },
             child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: primaryBlack,
+              ),
               padding: EdgeInsets.symmetric(vertical:12, horizontal:10),
               margin: EdgeInsets.symmetric(vertical:5,horizontal:10),
-              color: primaryBlack,
+              
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -41,9 +45,12 @@ class InfoPanel extends StatelessWidget {
               launch('https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donate');
             },
             child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: primaryBlack,
+              ),
               padding: EdgeInsets.symmetric(vertical:12, horizontal:10),
               margin: EdgeInsets.symmetric(vertical:5,horizontal:10),
-              color: primaryBlack,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -66,9 +73,12 @@ class InfoPanel extends StatelessWidget {
               launch('https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters');
             },
             child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: primaryBlack,
+              ),
               padding: EdgeInsets.symmetric(vertical:12, horizontal:10),
               margin: EdgeInsets.symmetric(vertical:5,horizontal:10),
-              color: primaryBlack,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
