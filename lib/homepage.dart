@@ -55,12 +55,32 @@ class _HomePageState extends State<HomePage> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 10),
-              child: Text(
-                'Worldwide',
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    'Worldwide',
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: primaryBlack,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Text(
+                      'Regional',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
             worldData==null ? CircularProgressIndicator() : WorldWidePanel(worldData: worldData,),
