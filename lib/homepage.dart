@@ -101,7 +101,7 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10.0),
               child: Text(
-                'Most affected Countries',
+                'Affected Countries',
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -111,7 +111,17 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 10,),
             countryData==null?Container():MostAffectedPanel(countryData: countryData,),
             InfoPanel(),
-            SizedBox(height: 50,),
+            SizedBox(height: 20,),
+            Center(
+              child: Text(
+                "WE ARE TOGETHER IN THE FIGHT",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+            SizedBox(height: 20,),
           ],
         ),
       ),
