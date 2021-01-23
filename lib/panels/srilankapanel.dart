@@ -22,13 +22,13 @@ class SriLankaPanel extends StatelessWidget {
             children: <Widget>[
               StatusPanel(
                 title: 'New Cases',
-                panelColor: Colors.red[100],
+                panelColor: Colors.black,
                 textColor: Colors.red,
                 count: srilankaData["data"]['local_new_cases'].toString(),
               ),
               StatusPanel(
                 title: 'New Deaths',
-                panelColor: Colors.red[100],
+                panelColor: Colors.black,
                 textColor: Colors.red,
                 count: srilankaData["data"]['local_new_deaths'].toString(),
               ),
@@ -50,36 +50,37 @@ class SriLankaPanel extends StatelessWidget {
               crossAxisCount: 2,
               childAspectRatio: 2
             ),
+            
             children: <Widget>[
               
               StatusPanel(
                 title: 'CONFIRMED',
-                panelColor: Colors.red[100],
-                textColor: Colors.red,
+                panelColor: Colors.grey[800],
+                textColor: Colors.white,
                 count: srilankaData["data"]['local_total_cases'].toString(),
               ),
               StatusPanel(
                 title: 'ACTIVE',
-                panelColor: Colors.blue[100],
-                textColor: Colors.blue[900],
+                panelColor: Colors.grey[800],
+                textColor: Colors.white,
                 count: srilankaData['data']['local_active_cases'].toString(),
               ),
               StatusPanel(
                 title: 'RECOVERED',
-                panelColor: Colors.green[100],
-                textColor: Colors.green,
+                panelColor: Colors.grey[800],
+                textColor: Colors.white,
                 count: srilankaData['data']['local_recovered'].toString(),
               ),
               StatusPanel(
                 title: 'DEATHS',
-                panelColor: Colors.grey[400],
-                textColor: Colors.grey[900],
+                panelColor: Colors.grey[800],
+                textColor: Colors.white,
                 count: srilankaData['data']['local_deaths'].toString(),
               ),
               StatusPanel(
-                title: 'TOATAL PCR \nCOUNT',
-                panelColor: Colors.grey[400],
-                textColor: Colors.grey[900],
+                title: 'PCR COUNT',
+                panelColor: Colors.grey[800],
+                textColor: Colors.white,
                 count: srilankaData['data']['total_pcr_testing_count'].toString(),
               ),
             ],

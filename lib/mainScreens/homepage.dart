@@ -1,7 +1,6 @@
+import 'package:covid19_app/datasource.dart';
 import 'package:covid19_app/panels/srilankapanel.dart';
 import 'package:flutter/material.dart';
-import 'datasource.dart';
-
 class HomePage extends StatefulWidget {
   final Map srilankaData;
   HomePage({this.srilankaData});
@@ -21,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(      
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.black26,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -31,14 +30,16 @@ class _HomePageState extends State<HomePage> {
               height: 100,
               alignment: Alignment.center,
               padding: EdgeInsets.all(10),
-              color: Colors.orange[100],
+              //color: Colors.orange[100],
               child: Text(
                 DataSource.quote,
                 style: TextStyle(
-                  color: Colors.orange[800],
+                  color: Colors.grey,
                   fontWeight: FontWeight.bold,
                   fontSize: 16,
+                  
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
 
@@ -47,7 +48,7 @@ class _HomePageState extends State<HomePage> {
               child: Text(
                 'Sri Lanka',
                 style: TextStyle(
-                  color: Colors.yellow,
+                  color: Colors.white,
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                 ),

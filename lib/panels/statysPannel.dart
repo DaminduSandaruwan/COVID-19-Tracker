@@ -16,6 +16,7 @@ class StatusPanel extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
         color: panelColor,
+        border: Border.all(color: Colors.grey)
       ),
       margin: EdgeInsets.all(10),
       

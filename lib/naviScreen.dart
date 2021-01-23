@@ -1,8 +1,7 @@
 import 'dart:convert';
-
-import 'package:covid19_app/homepage.dart';
-import 'package:covid19_app/moreScreen.dart';
-import 'package:covid19_app/panels/affected.dart';
+import 'package:covid19_app/mainScreens/affected.dart';
+import 'package:covid19_app/mainScreens/homepage.dart';
+import 'package:covid19_app/mainScreens/moreScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:http/http.dart' as http;
@@ -105,10 +104,16 @@ class _NaviScreenState extends State<NaviScreen> {
         iconSize: 25,
         selectedFontSize: 10,
       ),
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.grey[900],
       appBar: AppBar(
         centerTitle: true,
-        title: Text("COVID-19 TRACKER"),
+        title: Text(
+          "COVID-19 TRACKER",
+          style: TextStyle(
+            color: Colors.white
+          ),
+        ),
+        backgroundColor: Colors.black26,
       ),
       
       body: PageView(
