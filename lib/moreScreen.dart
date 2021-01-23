@@ -1,20 +1,19 @@
-import 'package:covid19_app/panels/srilankapanel.dart';
+import 'package:covid19_app/panels/infoPanel.dart';
 import 'package:flutter/material.dart';
 import 'datasource.dart';
 
-class HomePage extends StatefulWidget {
-  final Map srilankaData;
-  HomePage({this.srilankaData});
+class MoreScreen extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _MoreScreenState createState() => _MoreScreenState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _MoreScreenState extends State<MoreScreen> {
 
   
 
   @override
   void initState() {
+    //fetchWorldWideData();
     super.initState();
   }   
 
@@ -42,20 +41,8 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 10),
-              child: Text(
-                'Sri Lanka',
-                style: TextStyle(
-                  color: Colors.yellow,
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-
-            widget.srilankaData==null ? CircularProgressIndicator() : SriLankaPanel(srilankaData: widget.srilankaData,),
-
+                  
+            InfoPanel(),
             SizedBox(height: 20,),
             Center(
               child: Text(

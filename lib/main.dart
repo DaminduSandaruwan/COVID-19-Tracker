@@ -1,5 +1,5 @@
 import 'package:covid19_app/datasource.dart';
-import 'package:covid19_app/homepage.dart';
+import 'package:covid19_app/naviScreen.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -10,7 +10,7 @@ void main(){
         fontFamily: 'Circular',
         primaryColor: primaryBlack
       ),
-      home: HomePage(),
+      home: NaviScreen(),
     )
   );
 }
