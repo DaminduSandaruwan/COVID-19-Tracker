@@ -46,7 +46,7 @@ class MostAffectedPanel extends StatelessWidget {
                          Text('CONFIRMED : ' + countryData[index]['cases'].toString(),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red),),
                          Text('ACTIVE : ' + countryData[index]['active'].toString(),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),),
                          Text('RECOVERED : ' + countryData[index]['recovered'].toString(),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.green),),
-                         Text('DEATHS : ' + countryData[index]['deaths'].toString(),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey[800]),),
+                         Text('DEATHS : ' + countryData[index]['deaths'].toString(),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey[400]),),
                        ],
                      ),
                    ),
