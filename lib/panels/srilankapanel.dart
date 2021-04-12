@@ -13,30 +13,30 @@ class SriLankaPanel extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          GridView(
-            shrinkWrap: true,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              childAspectRatio: 2
-            ),
-            children: <Widget>[
-              StatusPanel(
-                title: 'New Cases',
-                panelColor: Colors.black,
-                textColor: Colors.red,
-                count: srilankaData["data"]['local_new_cases'].toString(),
-              ),
-              StatusPanel(
-                title: 'New Deaths',
-                panelColor: Colors.black,
-                textColor: Colors.red,
-                count: srilankaData["data"]['local_new_deaths'].toString(),
-              ),
+          // GridView(
+          //   shrinkWrap: true,
+          //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          //     crossAxisCount: 2,
+          //     childAspectRatio: 2
+          //   ),
+          //   children: <Widget>[
+          //     StatusPanel(
+          //       title: 'New Cases',
+          //       panelColor: Colors.black,
+          //       textColor: Colors.red,
+          //       count: srilankaData["data"]['local_new_cases'].toString(),
+          //     ),
+          //     StatusPanel(
+          //       title: 'New Deaths',
+          //       panelColor: Colors.black,
+          //       textColor: Colors.red,
+          //       count: srilankaData["data"]['local_new_deaths'].toString(),
+          //     ),
               
               
               
-            ],
-          ),
+          //   ],
+          // ),
           Text(
             'Updated Time : ' + srilankaData["data"]['update_date_time'].toString(),
             style: TextStyle(
