@@ -32,7 +32,9 @@ class MostAffectedPanel extends StatelessWidget {
                    child: Column(
                      mainAxisAlignment: MainAxisAlignment.center,
                      children: <Widget>[
-                       Text(countryData[index]['country'],style: TextStyle(fontWeight: FontWeight.bold),),
+                       Container(
+                         width: 100,
+                         child: Text(countryData[index]['country'],style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),textAlign: TextAlign.center,)),
                        Image.network(countryData[index]['countryInfo']['flag'], height: 50, width: 60,),
 
                      ],

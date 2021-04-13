@@ -55,19 +55,19 @@ class SriLankaPanel extends StatelessWidget {
               
               StatusPanel(
                 title: 'CONFIRMED',
-                panelColor: Colors.grey[800],
+                panelColor: Colors.red[800].withOpacity(0.8),
                 textColor: Colors.white,
                 count: srilankaData["data"]['local_total_cases'].toString(),
               ),
               StatusPanel(
                 title: 'ACTIVE',
-                panelColor: Colors.grey[800],
+                panelColor: Colors.brown[800].withOpacity(0.8),
                 textColor: Colors.white,
                 count: srilankaData['data']['local_active_cases'].toString(),
               ),
               StatusPanel(
                 title: 'RECOVERED',
-                panelColor: Colors.grey[800],
+                panelColor: Colors.green[800].withOpacity(0.8),
                 textColor: Colors.white,
                 count: srilankaData['data']['local_recovered'].toString(),
               ),
@@ -79,7 +79,7 @@ class SriLankaPanel extends StatelessWidget {
               ),
               StatusPanel(
                 title: 'PCR COUNT',
-                panelColor: Colors.grey[800],
+                panelColor: Colors.blue[800].withOpacity(0.5),
                 textColor: Colors.white,
                 count: srilankaData['data']['total_pcr_testing_count'].toString(),
               ),
