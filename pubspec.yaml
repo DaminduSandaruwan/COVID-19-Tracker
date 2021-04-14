@@ -14,7 +14,7 @@ description: A new Flutter project.
 version: 1.0.0+3
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -26,6 +26,7 @@ dependencies:
   http:
   url_launcher:
   font_awesome_flutter: ^8.11.0
+  google_mobile_ads: ^0.11.0
 
 
 dev_dependencies:

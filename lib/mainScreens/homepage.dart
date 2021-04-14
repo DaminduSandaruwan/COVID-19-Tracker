@@ -1,6 +1,10 @@
 import 'package:covid19_app/datasource.dart';
+import 'package:covid19_app/mainScreens/ad_helper.dart';
+import 'package:covid19_app/mainScreens/banAdd.dart';
 import 'package:covid19_app/panels/srilankapanel.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+
 class HomePage extends StatefulWidget {
   final Map srilankaData;
   HomePage({this.srilankaData});
@@ -9,13 +13,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
-  
-
-  @override
-  void initState() {
-    super.initState();
-  }   
 
   @override
   Widget build(BuildContext context) {
@@ -69,6 +66,20 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             SizedBox(height: 20,),
+            BansAdd()  
+            
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: [
+            //     Container(),
+            //     Container(
+            //       child: AdWidget(ad: _ad),
+            //       width: _ad.size.width.toDouble(),
+            //       height: 72.0,
+            //       alignment: Alignment.center,
+            //     ),
+            //   ],
+            // ),
           ],
         ),
       ),

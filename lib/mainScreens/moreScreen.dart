@@ -1,4 +1,5 @@
 import 'package:covid19_app/datasource.dart';
+import 'package:covid19_app/mainScreens/banAdd.dart';
 import 'package:covid19_app/panels/infoPanel.dart';
 import 'package:flutter/material.dart';
 
@@ -56,6 +57,7 @@ class _MoreScreenState extends State<MoreScreen> {
               ),
             ),
             SizedBox(height: 20,),
+            BansAdd()
           ],
         ),
       ),
